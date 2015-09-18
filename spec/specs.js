@@ -3,3 +3,4 @@ describe('countDown', function() {
     expect(countDown(5)).to.eql([5, 4, 3, 2, 1]);
   });
 });
+
