@@ -1,14 +1,18 @@
-Example of Scripts
 
+var countDown = function(number) {
+  var numberList = [];
+  for (var i = 1; i <= number; i++) {
+    numberList.unshift(i);
+  }
+  return numberList;
+}
 
-// var factorial = function(number) {
-//   if (number === 0) {
-//     return 1;
-//   } else {
-//
-//     return (number * factorial(number-1));
+// var countDownMinus = function(numberList) {
+//   var minusOneList = numberList.unshift([0]);
 //   }
+//   return minusOneList;
 // }
+
 //
 //
 // $(document).ready(function() {
