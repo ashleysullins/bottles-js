@@ -1,29 +1,26 @@
-# <Name>
+# Ciders
 
-##### <Brief Description>, <Date>
+##### I'll give you a song for a cider, 9/18/15
 
-#### <Authors>
+#### Ashley Sullins
 
 ## Description
 
-
+A user will input a number and lyrics similar to "99 Bottles of Beer" will be printed on the screen, based on the number the user types into the number field. 
 
 ## Setup
 
-No special setup required
+Clone the beers repository using the [clone URL] (https://github.com/ashleysullins/bottles-js.git). Tests can be found by navigating to the ``spec-runner.html`` file in the project. The UI can be found under ``cider.html`` file in the project.  
 
 ## Technologies Used
 
--JavaScript and HTML for rendering<br>
--Chai and Mocha for testing<br>
--Bootstrap for styling
-
+- JavaScript and HTML for rendering
+- Chai and Mocha for testing
+- Bootstrap for styling
 
 ### Legal
 
-
-
-Copyright (c) 2015 <Authors>
+Copyright (c) 2015  Ashley Sullins
 
 This software is licensed under the MIT license.
 
