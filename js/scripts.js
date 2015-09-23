@@ -1,9 +1,20 @@
-var countDown = function(number) {
-  var numberList = [];
-  for (var i = 1; i <= number; i++) {
-    numberList.unshift(i);
+var ciders = function(number) {
+  var song = "";
+  for (var i = number; i >= 0; i--) {
+    if (i === 0) {
+       song += "<br> No more bottles of cider on the wall, no more bottles of cider. Go to the store and buy some more, " + number + " bottles of cider on the wall.";
+    }
+    else if (i === 1) {
+       song += "<br>" + i + " more bottle of cider on the wall, " + i + " more bottle of cider. Take one down and pass it around, " + (i - 1) + " bottles of cider on the wall.";
+    }
+    else if (i === 2) {
+       song += "<br>" + i + " more bottles of cider on the wall, " + i + " more bottles of cider. Take one down and pass it around, " + (i - 1) + " bottle of cider on the wall.";
+    }
+    else if (i > 2) {
+       song += "<br>" + i + " more bottles of cider on the wall, " + i + " more bottles of cider. Take one down and pass it around, " + (i - 1) + " bottles of cider on the wall."
+    }
   }
-  return numberList;
+  return song;
 }
 
 $(document).ready(function() {
@@ -15,15 +26,10 @@ $(document).ready(function() {
     $(".oneLiner").empty();
     
     var number = parseInt($("input#number").val());
-    var numArray = countDown(number);
+    var numArray = ciders(number);
     var index = 0;
   
-    numArray.forEach(function(entry) {
-      $(".song").append("<br> " + entry + " bottles of cider on the wall, " + entry + " bottles of cider. Take one down and pass it around, " + (entry - 1) + " bottles of cider on the wall. " );
-      index++;
-    });
-    
-    $(".finalLine").append("<br> No more bottles of cider on the wall, no more bottles of cider. Go to the store and buy some more, " + number +  " bottles of cider on the wall!");
+    $(".song").html(numArray);
     
     $("#result").show();
     event.preventDefault();
